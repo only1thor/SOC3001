@@ -1,0 +1,38 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta http-equiv="refresh" content="60">
+<title> Capture </title>
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  .fit { /* set relative picture size */
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .center {
+    display: block;
+    margin: auto;
+  }
+</style>
+</head>
+
+<body style="height: 520px;" text="blue" bgcolor="white">
+<p> </p><center>This page updates ever minute. </center><p></p>
+<img class="center fit" src="Capture_files/capture.jpg">
+<p> </p><center>This page updates ever minute. </center><p></p>
+<script src="Capture_files/jquery-latest.js"></script>
+<script type="text/javascript" language="JavaScript">
+  function set_body_height() { // set body height = window height
+    $('body').height($(window).height());
+  }
+  $(document).ready(function() {
+    $(window).bind('resize', set_body_height);
+    set_body_height();
+  });
+</script>
+
+
+
+</body></html>
